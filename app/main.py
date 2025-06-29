@@ -11,7 +11,7 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 @app.get("/")
 async def root():
-    return {"message": "Welcome to Grocery API!"}
+    return {"message": "Welcome to Grocery API folks!"}
 
 # DB Dependency
 def get_db():
